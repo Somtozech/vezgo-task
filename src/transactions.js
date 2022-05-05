@@ -14,9 +14,9 @@ async function getTransactions(walletAddress) {
         to: transaction.to_address,
         tx_hash: transaction.tx_hash,
         amount: formatValueFromWeiToEther(transaction.value),
-        fiat_value: transaction.value_quote,
+        fiat_value: `${transaction.value_quote}`,
         fees_paid: formatValueFromWeiToEther(transaction.fees_paid),
-        fees_paid_in_fiat: transaction.gas_quote,
+        fees_paid_in_fiat: `${transaction.gas_quote}`,
         ticker: response.quote_currency
     }));
 

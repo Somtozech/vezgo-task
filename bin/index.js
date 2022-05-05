@@ -9,7 +9,6 @@ const getArg = require("../src/utils/getArgs");
     process.on('unhandledRejection', errorHandler);
 
     try {
-        console.log(process.argv);
         const walletAddress = getArg("--wallet");
 
         if (!walletAddress) {
@@ -18,7 +17,7 @@ const getArg = require("../src/utils/getArgs");
 
         const result = await getWalletDetails(walletAddress);
 
-        console.log(JSON.stringify(result, null, 2));
+        console.log(JSON.stringify(result));
     } catch (error) {
         errorHandler(error)
     }
