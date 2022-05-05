@@ -10,7 +10,6 @@ class HttpService {
             const result = await this.axiosInstance.get(url, { params });
             return result;
         } catch (error) {
-            console.log(JSON.stringify({ error }, null, 2))
             throw error
         }
     }
