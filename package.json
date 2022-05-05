@@ -1,10 +1,13 @@
 {
   "name": "vezgo-task",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bin/index.js",
   "repository": "https://github.com/Somtozech/vezgo-task.git",
   "author": "Somtozech <ezechinnaemeka@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "node ./bin"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "ethers": "^5.6.5"
